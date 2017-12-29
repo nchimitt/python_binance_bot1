@@ -1,8 +1,6 @@
 from binance.client import Client
-api_key = #use your own
-api_secret = #use your own
+api_key = #Enter your own API Key
+api_secret = #Enter your own API Secret Key
 client = Client(api_key, api_secret)
-tickers = client.get_symbol_ticker()
-#tickers: list of dictionaries of type {symbol:__,price:__}
-print (tickers[0]['symbol'])
-print (tickers[0]['price'])
+hi = [];
+hi = client.get_klines(symbol='ETHBTC',interval='5m',limit=100)
